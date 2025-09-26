@@ -162,4 +162,59 @@ footer p {
 #popup button {
     padding:5px 10px; float:right;
 }
-/********************/
+/**************************************************/
+@media(max-width:500px) {
+    #layout {
+        flex-direction: column;
+        width:100%; height:initial;
+        /* overflow: hidden; */
+    }
+    header {width:100%;}
+    header> h1 img {
+        margin:auto;
+    }
+    #right {
+        width:initial;
+    }
+    #slide {
+        /* height:initial; */    /*높이:초기화*/
+        height:35vh;  /*absolute 때문에 높이값을 보전해야 한다 */
+    }
+    #slide img {
+        width:100vw; height:30vh;
+    }
+    main {
+        flex-direction: column;
+        height:initial; 
+    }
+    #nogel {
+        padding:0 5px 20px 5px;
+    }
+    #notice {
+        position:initial;       
+    }
+    #gallery {
+        position: initial;
+    }
+    #banner img , #quick img{
+        margin:auto;
+    }
+    footer {
+        flex-direction: column; height:initial;
+        padding:20px 0;
+    }
+    footer a {
+        border:none;
+    }
+    footer nav {
+        border:none; text-align: center;
+        padding-top:20px;
+    }
+    footer p {
+        letter-spacing: -1px; text-align: center;
+    }
+    #popup {
+        width:90%; top:15vh; left:5vw;
+    }
+    
+}
